@@ -4,11 +4,13 @@ body {
   font-size: 16px;
   overflow: hidden;
 }
-.wrapper {
-  background: #ffeeee url("../img/bg1.jpg") no-repeat center center fixed;
-  background-size: cover;
+.section {
   width: 100vw;
   height: 100vh;
+}
+.main {
+  background: #ffeeee url("../img/bg1.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 ul li {
   list-style-type: none;
@@ -28,7 +30,7 @@ ul {
 .menuPanel {
   height: 100%;
   background-color: lightblue;
-  width: 23%;
+  width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +41,8 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: fixed;
+  left: -270px;
 }
 .menu {
   display: -webkit-box;
@@ -66,6 +70,6 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.socials__Item {
+.socials__item {
   margin: 10px 15px 0;
 }

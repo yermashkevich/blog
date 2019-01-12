@@ -5,13 +5,15 @@ body {
 	overflow: hidden;
 }
 
-.wrapper {
-	background: #ffeeee url("../img/bg1.jpg") no-repeat center center fixed;
-	background-size: cover;
+.section {
 	width: 100vw;
 	height: 100vh;
 }
 
+.main {
+	background: #ffeeee url("../img/bg1.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
  ul li {
 	list-style-type: none;
 }
@@ -33,10 +35,12 @@ ul {
 .menuPanel {
 	height: 100%;
 	background-color: lightblue;
-	width: 23%;
+	width: 270px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: fixed;
+	left: -270px;
 }
 
 .menu {
@@ -55,7 +59,7 @@ ul {
 	padding-bottom: 50px;
 	justify-content: center;
 	flex-wrap: wrap;
-	&__Item {
+	&__item {
 		margin: 10px 15px 0;
 	}
 }
