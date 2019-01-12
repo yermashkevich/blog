@@ -1,6 +1,65 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+.section {
+	width: 100vw;
+	height: 100vh;
+}
+
+.main {
+	background: #ffeeee url("../img/bg1.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+ ul li {
+	list-style-type: none;
+}
+ a {
+	text-decoration: none;
+} 
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.mainLink {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.menuPanel {
+	height: 100%;
+	background-color: lightblue;
+	width: 270px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: fixed;
+	left: -270px;
+}
+
 .menu {
-	background-color: lightgreen;
+	display: flex;
+	flex-direction: column;
+	padding: 10%;
 	&__item {
-		background-color: lightblue;
+		padding: 10px;
+		color: grey;
+		font-size: 18px;
+	}
+}
+
+.socials {
+	display: flex;
+	padding-bottom: 50px;
+	justify-content: center;
+	flex-wrap: wrap;
+	&__item {
+		margin: 10px 15px 0;
 	}
 }
