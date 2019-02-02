@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
+  overflow: hidden;
 }
 .section {
   width: 100vw;
@@ -42,6 +43,12 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: fixed;
+  left: -270px;
+  -webkit-transition: left 0.8s;
+  transition: left 0.8s;
+}
+.menuPanel.open {
+  left: 0;
 }
 .menu {
   display: -webkit-box;
@@ -58,6 +65,65 @@ ul {
   color: #C38F64;
   font-size: 18px;
   display: block;
+}
+.burger {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  margin: 10px 15px;
+  -webkit-transition: margin-left 0.8s;
+  transition: margin-left 0.8s;
+}
+.burger > span {
+  display: block;
+  margin-bottom: 10px;
+  height: 2px;
+  background-color: #000000;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.burger-bottom {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.burger:hover {
+  cursor: pointer;
+  /* &>.burger-top {
+				transform: scaleX(1.1);
+			}
+		&>.burger-middle {
+				transform: scaleX(0.8);
+		}
+		&>.burger-bottom {
+				transform: scaleX(1.1);
+		} */
+}
+.burger.active {
+  margin-left: 275px;
+}
+.burger.active > .burger-top {
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20%;
+}
+.burger.active > .burger-middle {
+  background-color: #ffffff;
+  -webkit-transition: -webkit-transform 0.5s 0.5s;
+  transition: -webkit-transform 0.5s 0.5s;
+  transition: transform 0.5s 0.5s;
+  transition: transform 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+  -webkit-transform: translateY(-33px) rotateZ(45deg);
+  transform: translateY(-33px) rotateZ(45deg);
+}
+.burger.active > .burger-bottom {
+  background-color: #ffffff;
+  -webkit-transition: -webkit-transform 0.5s 1s;
+  transition: -webkit-transform 0.5s 1s;
+  transition: transform 0.5s 1s;
+  transition: transform 0.5s 1s, -webkit-transform 0.5s 1s;
+  -webkit-transform: translateY(-45px) rotateZ(-45deg);
+  transform: translateY(-45px) rotateZ(-45deg);
 }
 .logo {
   display: block;

@@ -4,9 +4,9 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
+	font-size: 18px;
 	position: relative;
-	// overflow: hidden;
+	overflow: hidden;
 }
 
 .section {
@@ -44,7 +44,11 @@ ul {
 	flex-direction: column;
 	justify-content: space-between;
 	position: fixed;
-	// left: -270px;
+	left: -270px;
+	transition: left 0.8s;
+	&.open {
+		left: 0;
+	}
 }
 
 .menu {
@@ -58,6 +62,59 @@ ul {
 		display: block;
 	}
 }
+
+.burger {
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	margin: 10px 15px;
+	transition: margin-left 0.8s;
+	> span {
+		display: block;
+		margin-bottom: 10px;
+		height: 2px;
+		background-color: #000000;
+		text-align: center;
+		transition: 0.3s;
+	}
+	&-bottom {
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	&:hover {
+		cursor: pointer;
+		/* &>.burger-top {
+				transform: scaleX(1.1);
+			}
+		&>.burger-middle {
+				transform: scaleX(0.8);
+		}
+		&>.burger-bottom {
+				transform: scaleX(1.1);
+		} */
+	}
+	&.active {
+		margin-left: 275px;
+		&>.burger-top {
+			height: 45px;
+			background-color: rgba(0, 0, 0, 0.8);
+			border-radius: 20%;	
+		}
+		&>.burger-middle {
+			background-color: #ffffff;
+			transition: transform 0.5s 0.5s;
+			transform: translateY(-33px) rotateZ(45deg);
+		}
+		&>.burger-bottom {
+			background-color: #ffffff;
+			transition: transform 0.5s 1s;
+			transform: translateY(-45px) rotateZ(-45deg);
+		}
+	}
+}
+
+
+
 
 .logo {
 	display: block;
