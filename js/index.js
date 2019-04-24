@@ -5,6 +5,7 @@
 // })(jQuery);
 
 $(".burger").click(function() {
-	$(".menuPanel").toggleClass("open");
+	$(".menu__bg").toggleClass("open");
 	$(this).toggleClass("active");
+	$(".overlay").toggleClass("open");
 });

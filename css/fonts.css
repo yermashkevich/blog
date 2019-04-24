@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'NordBold';
+    src: url('../font/Nord/nordbold.eot'),
+         url('../font/Nord/nordbold.woff') format('woff'),
+         url('../font/Nord/NordBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NordLight';
+    src: url('../font/Nord/nordlight.eot'),
+         url('../font/Nord/nordlight.woff') format('woff'),
+         url('../font/Nord/NordLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NordMedium';
+    src: url('../font/Nord/nordmedium.eot'),
+         url('../font/Nord/nordmedium.woff') format('woff'),
+         url('../font/Nord/NordMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NordRegular';
+    src: url('../font/Nord/nordregular.eot'),
+         url('../font/Nord/nordregular.woff') format('woff'),
+         url('../font/Nord/NordRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PaddisHandWritten';
+    src: url('../font/PaddisHandwritten/paddis_handwritten.eot'),
+         url('../font/PaddisHandwritten/paddis_handwritten.woff') format('woff'),
+         url('../font/PaddisHandwritten/Paddis_Handwritten.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PolarVertex';
+    src: url('../font/PolarVertex/polarvertex-regular.eot'),
+         url('../font/PolarVertex/polarvertex-regular.woff') format('woff'),
+         url('../font/PolarVertex/polarvertex-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
